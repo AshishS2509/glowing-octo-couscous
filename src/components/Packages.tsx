@@ -42,7 +42,7 @@ function FeatureCard({
       </Avatar>
 
       <Text
-        fz={{ base: "14px", xs: "14px", sm: "16px", md: "18px", lg: "20px" }}
+        fz={{ base: "14px", xs: "14px", sm: "14px", md: "16px", lg: "16px" }}
         fw={700}
         mt="md"
         lts={0.2}
@@ -112,7 +112,7 @@ export function Packages() {
           </Box>
         </Grid.Col>
 
-        <Grid.Col span={{ lg: 6, md: 6, sm: 12, xs: 12 }}>
+        <Grid.Col span={{ lg: 6, md: 6, sm: 12, xs: 12 }} p={0}>
           <Flex gap={16} p={{ sm: "xl" }}>
             {FEATURES.map((item) => (
               <FeatureCard
