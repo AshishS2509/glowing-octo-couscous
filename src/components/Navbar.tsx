@@ -7,6 +7,7 @@ import {
   Drawer,
   Stack,
   Flex,
+  Avatar,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
@@ -22,23 +23,22 @@ export function Navbar() {
         py="md"
         pos={"sticky"}
         top={0}
-        px={{ sm: 8, md: 64, lg: 128 }}
-        maw={"1322"}
+        px={{ xs: 28, sm: 28, md: 96, lg: 256 }}
       >
         <Group justify="space-between">
-          <Text fw={800} size="xl" c="primary">
+          <Text fw={800} size={"xl"} c="primary">
             Brandname
           </Text>
 
-          <Group gap="xl" visibleFrom="sm">
+          <Group gap="lg" visibleFrom="sm">
             {links.map((link) => (
               <Text
                 key={link}
                 component="a"
                 href={`#${link.toLowerCase()}`}
                 size="sm"
-                fw={500}
-                c="dimmed"
+                fw={700}
+                c="neutral"
                 style={{ cursor: "pointer" }}
               >
                 {link}
@@ -47,17 +47,21 @@ export function Navbar() {
           </Group>
           <Flex gap={28} align={"center"}>
             <Group visibleFrom="xs">
-              <Button variant="subtle" c={"success"}>
+              <Button variant="transparent" c={"success"}>
                 Login
               </Button>
-              <Button
-                variant="filled"
-                bg={"success"}
-                c={"light"}
-                fz={"h6"}
-                size="md"
-              >
-                JOIN US
+              <Button variant="filled" bg={"success"} size="md">
+                <Text c={"light"} size="xs" fw={600}>
+                  JOIN US{" "}
+                </Text>
+                <Avatar
+                  src={"vector.svg"}
+                  ml={16}
+                  radius={0}
+                  h={10}
+                  w={12}
+                  size={""}
+                />
               </Button>
             </Group>
             <Burger opened={opened} onClick={toggle} hiddenFrom="sm" />
@@ -83,6 +87,7 @@ export function Navbar() {
               component="a"
               href={`#${link.toLowerCase()}`}
               size="md"
+              c={"primary"}
               fw={500}
               onClick={close}
               style={{ cursor: "pointer" }}

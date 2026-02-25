@@ -1,4 +1,5 @@
 import "@mantine/core/styles.css";
+import '@mantine/carousel/styles.css';
 import { Navbar } from "./components/Navbar";
 import { AppShell } from "@mantine/core";
 import { Hero } from "./components/Hero";
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <AppShell bg={"light"}>
-        <AppShell.Header bg={"light"} pos={"sticky"} top={0} bd={0}>
+        <AppShell.Header bg={"light"} pos={"sticky"} top={0} p={0} bd={0}>
           <Navbar />
         </AppShell.Header>
         <AppShell.Main>
