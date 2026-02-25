@@ -1,7 +1,7 @@
 import { Avatar } from "@mantine/core";
 import React from "react";
 
-type IconType =
+export type IconType =
   | "arrow"
   | "angle"
   | "contact"
@@ -26,11 +26,11 @@ export const Icon: React.FC<IconProps> = ({ type }) => {
       case "arrow":
         return (
           <svg
+            xmlns="http://www.w3.org/2000/svg"
             width="12"
             height="10"
             viewBox="0 0 12 10"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               fillRule="evenodd"

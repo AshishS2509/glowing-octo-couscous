@@ -11,7 +11,7 @@ import { Icon } from "./shared/icons";
 export function Footer() {
   return (
     <>
-      <Container fluid bg={"white"} px={{ lg: 256, md: 96, sm: 28 }} py={40}>
+      <Container fluid bg={"white"} px={{ lg: 256, md: 96, sm: 28, base: 28 }} py={40}>
         <Grid justify="space-between">
           <FooterColumn
             title="Company Info"

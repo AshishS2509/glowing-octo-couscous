@@ -15,14 +15,20 @@ export function Hero() {
       <Grid h={{ lg: "100vh" }} gutter={0} px={0}>
         <Grid.Col
           span={{ base: 12, md: 6 }}
-          pl={{ lg: 156, md: 28, sm: 28, xs:28, base: 28 }}
+          pl={{ lg: 156, md: 28, sm: 28, xs: 28, base: 28 }}
         >
           <Stack h="100%" justify="center" maw={500} pb={{ lg: 128 }}>
             <Text size="sm" fw={700} c="success">
               Welcome
             </Text>
 
-            <Title fz={{lg: 58, md: 46, sm: 36}} fw={700} lh={1.45} lts={0.2} c={"primary"}>
+            <Title
+              fz={{ lg: 58, md: 46, sm: 36 }}
+              fw={700}
+              lh={1.45}
+              lts={0.2}
+              c={"primary"}
+            >
               Best Learning Opportunities
             </Title>
 
@@ -32,7 +38,7 @@ export function Hero() {
               lts={0.2}
               size="lg"
               fw={600}
-              maw="60%"
+              maw={{ sm: "60%", xs: "60%", md: "60%", base: "100%" }}
               mt={16}
             >
               Our goal is to make online education work for everyone
